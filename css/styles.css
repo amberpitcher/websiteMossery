@@ -1,0 +1,611 @@
+*{
+	box-sizing: border-box;
+}
+
+/*------------------------ GENERAL STYLES ------------------------*/
+html { font-size: 100%; }
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+
+.text-align{
+	text-align: left;
+}
+
+img:before, div:before, section:before, section:after, div:after, img:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+a{
+	text-decoration: none;
+	color: #FFFCFA;
+}
+
+h1{
+	font-family: 'Fira Sans', sans-serif;
+	color: #FFFCFA;
+	font-size: 6.25em;
+}
+
+h2{
+	font-family: 'Fira Sans', sans-serif;
+	color: #FFFCFA;
+	font-size: 4.375em;
+}
+
+h3{
+	font-family: 'Fira Sans', sans-serif;
+	color: #9C8679;
+	font-size: 3.125em;
+}
+
+h4{
+	font-family: 'Lato', sans-serif;
+	color: #617777;
+	font-size: 1.1em;
+}
+
+h6{
+	font-style: inherit;
+	font-size: 100%;
+}
+
+p{
+	color: #9C8679;
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+}
+
+form input{
+	width: 89.70223325062034%;
+	height: 40px;
+	outline: none;
+	border:none;
+	background-color: #FFF6F3;
+	background-color: rgba(156,134,121,0.05);
+	color: #9C8679;
+	padding: 10px;
+	margin-right: -10px;
+	font-size: 16px;
+}
+form input::-webkit-input-placeholder{ 
+  color: #FFDFCF;
+}
+
+input[name="submit"]{ 
+	width: 231px;
+	outline: none;
+	border:none;
+	background-color: #FFDFCF;
+	color: #FFFCFA;
+	padding: 10px;
+	font-size: 16px;
+}
+input[name="submit"]:hover{
+	background-color: #FFD0BB;
+}
+
+button{
+	width: 231px;
+	outline: none;
+	border:none;
+	background-color: #FFDFCF;
+	color: #FFFCFA;
+	padding: 10px;
+	font-size: 16px;
+}
+button:hover{
+	background-color: #FFD0BB;
+}
+
+body .container{
+	width: 100%;
+}
+/*------------------------ NAVIGATION STYLES ------------------------*/
+.logo .toggle, [id^="drop"]{
+	display: none;
+}
+
+body nav{
+	font-family: 'Fira Sans', sans-serif;
+	color: #FFFCFA;
+}
+body nav p{
+	color: #FFFCFA;
+}
+nav a:hover{
+	color: #FFDFCF;
+	transition: 0.3s;
+}
+
+.topbar{
+	background-color: #617777;
+	font-size: 16px;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 25px;
+}
+
+.promo{
+	display: flex;
+	justify-content: flex-start;
+}
+.promo h6{
+	color: #FFDFCF;
+}
+
+.login-signup {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.cart{
+	padding: 0 20px;
+}
+
+.admin{
+	display: flex;
+}
+
+.topbar select{
+	background-color:#617777;
+	border:none;
+	font-family: 'Fira Sans', sans-serif;
+	color: #FFFCFA;
+}
+.topbar select:focus{
+	outline: none;
+}
+
+.logo{
+	width: 100%;
+	background-color: #D5E2E1;
+	text-align: center;
+	padding: 10px 0;
+}
+.logo img{
+	width: 165px;
+}
+
+.navbar{
+	width: 100%;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+ul li a{
+	color: #9C8679;
+	padding: 10px 20px;
+}
+
+/*------------------------ INDEX.HTML HEADER STYLES ------------------------*/
+
+header{
+	position: relative;
+	
+}
+header img{
+	width: 100%;
+}
+
+.container header div{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*------------------------ INDEX.HTML MAIN STYLES ------------------------*/
+main{
+	font-family: 'Lato', sans-serif;
+	color: #9C8679;
+	width: 100%;
+	background-color: #FFFCFA;
+	padding: 40px 10.4685212299%;
+	text-align: center;
+}
+
+.main-img img{
+	width: 100%;
+}
+
+.container main .main-img{
+	position: relative;
+}
+
+.container .main-img .title{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	text-align: center;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+main .main-pair{
+	padding-top: 31px;
+	position: relative;
+}
+
+.main-pair .text-align{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	text-align: left;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.pair-one, .pair-two{
+	position: relative;
+	width: 48.43173431734317%;  
+}
+.pair-one img, .pair-two img{
+	width: 100%;
+}
+
+.pair-one h2, .pair-two h2{
+	position: absolute;
+	top: 30px;
+	left: 1%;
+}
+
+main .newsletter{			/*--Newsletter--*/
+	text-align: center;
+	padding: 220px 0;
+}
+main .newsletter h1{
+	text-align: center;
+	color: #9C8679;
+}
+main .newsletter p{
+	padding: 10px 0 25px 0;
+}
+form{
+	margin: 0;
+}
+.container main form input[type="text"]{
+	width: 71.96029776674938%;
+}
+
+
+.reviews{								/*--Reviews--*/
+	padding: 100px 0;
+}
+.reviews-articles{						
+	display: flex;
+	justify-content: space-between;
+}
+.reviews img{
+	max-width: 340px;					
+	width: 100%;
+}
+.reviews article{
+	width: 30%;
+	text-align: left;
+	padding-top: 25px;
+}
+
+.fa-star{
+	color: #FFDFCF;
+	padding-right: 5px;
+}
+.stars, article h6{
+	padding: 5px 0;
+}
+
+
+/*------------------------ FOOTER STYLES ------------------------*/
+
+footer p{
+	color: #FFFCFA;
+}
+footer .footer{						
+	width: 100%;
+	background-color: #D5E2E1;
+}
+footer .copywrite{
+	width: 100%;
+	background-color: #617777;
+}
+
+.footer, .footer h3{
+	color: #FFFCFA;
+	text-align: center;
+}
+.footer{
+	font-family: 'Lato', sans-serif;
+	padding: 25px 25px;
+}
+
+.foot-news p{
+	padding:10px 0;
+}
+
+.footer input{
+	background-color: #FFFCFA;
+	color: #617777;
+	width: 42.24011713030747%;
+	padding: 5px;
+}
+.footer input::-webkit-input-placeholder{ 
+  color: #D5E2E1;
+}
+
+.footer input[name="submit"]{
+	background-color: #617777;
+	color: #FFFCFA;
+	width: 16.910688140556368%;
+	padding: 5px;
+}
+.footer input[name="submit"]:hover{
+	background-color: #526666;
+}
+.footer button{
+	background-color: #617777;
+	width: 16.910688140556368%;
+	padding: 5px;
+}
+.footer button:hover{
+	background-color: #526666;
+}
+.footlinks{
+	display: flex;
+	justify-content: center;
+	padding: 50px  15.373352855051245% 0px  15.373352855051245%;
+}
+
+
+.about, .contact{
+	text-align: left;
+	padding-right: 9.077598828696926%;
+}
+.footer ol li{
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	font-size: 1.3em;
+}
+.footer ol li a{
+	padding: 0.3125em 0;
+}
+footer a:hover{
+	color: #617777;
+	transition: 0.3s;
+}
+
+
+.social-media{
+	display: flex;
+	flex-direction: column;
+}
+.social-media i{
+	font-size: 1.3em;
+}
+.social-media button{
+	width: 300px;
+	text-align: left;
+	border-radius: 5px;
+	margin: 5px 0;
+}
+
+.copywrite{
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	color: #FFFCFA;
+	text-align: center;
+	padding: 10px 0;
+}
+
+
+
+
+/*--------------------------REGISTER.HTML STYLES--------------------------*/
+
+.register-container header h2, .register-container main h4{
+	color: #9C8679;
+	margin-top: 75px;
+}
+
+.register-container main h4{
+	width:10%;
+}
+
+.register-container header{
+	text-align: center;
+}
+/*--------------------------REGISTER.HTML MAIN STYLES--------------------------*/
+.register-container main form{
+	padding: 50px 0;
+	text-align: left;
+}
+
+.register-container .form{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.register-container main form input:focus{
+	outline:2px solid #FFDFCF;
+}
+.register-container .input, .labels{
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	padding: 10px 0;
+}
+.register-container main form input{
+	margin: 25px 0;
+}
+.register-container main form .short{
+	width: 80%;
+	display: inline-block;
+}
+.register-container main h4{
+	margin:34px;
+}
+.register-container form select{
+	width: 80%;
+	height: 40px;
+	outline: none;
+	border:none;
+	background-color: #FFF6F3;
+	background-color: rgba(156,134,121,0.05);
+	color: #FFDFCF;
+	margin: 25px 0px;
+	font-size: 16px;
+}
+.register-container main form .inline{
+	width:100%;
+	display: flex;
+	justify-content: flex-end;
+}
+.register-container main .flex{
+	display: flex;
+	justify-content: flex-start;
+}
+.register-container main .flex h4{
+	margin: 120px 20px 20px 20px;
+}
+.register-container main .flex h3{
+	margin-top: 100px;
+}
+.register-container main input[type="submit"]{
+	margin: 75px  40.995607613469986% 50px 40.995607613469986%;
+}
+
+
+/*--------------------------customPlanner.HTML STYLES--------------------------*/
+
+.planner-container{
+	width: 100%;
+}
+.planner-container main{
+	padding: 40px 50px;
+}
+
+/*--------------------------customPlanner.HTML HEADER STYLES--------------------------*/
+
+.planner-container header{
+	text-align: center;
+	padding: 75px 9.663250366032211%;;
+}
+.planner-container header h2,p{
+	color: #9C8679;
+}
+
+.planner-container header h3{
+	color: #FFDFCF;
+	padding: 10px 0;
+}
+
+/*--------------------------customPlanner.HTML MAIN STYLES--------------------------*/
+
+.planner-container main{
+	text-align: left;
+}
+
+.planner-container main h3{
+	padding-top: 100px;
+}
+.planner-container main h4{
+	color: #9C8679;
+	padding: 5px 0 50px 0;
+}
+
+
+
+label > input{ /* Hide radio buttons */			/*image selector styles*/
+  visibility: hidden; 
+  position: absolute; 
+}
+label > input + img{ /* Style images */
+  cursor:pointer;
+  border:2px solid transparent;
+  max-width: 345px;
+  width: 30%;
+}
+
+#planner > input + img{
+	max-width: 530px;
+	 width: 48.80294659300184%;
+}
+
+#note > input + img{
+	max-width: 530px;
+	 width: 48.80294659300184%;
+}
+
+label > input:checked + img{ 
+  border:5px solid #FFDFCF;
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.name-personalisation{						/*name personalisation styles*/
+	display: flex;
+	justify-content: flex-start; 
+}
+
+.name-personalisation input{
+	width:  76.42725598526704%;
+	height: 50px;
+	margin-left: 10px; 
+}
+.name-personalisation input:focus{
+	outline:2px solid #FFDFCF;
+}
+.name-personalisation h4{
+	margin-top: 6px;
+}
+
+.typeface{
+	display: flex;
+	justify-content: space-between;
+}
+.typeface img{
+	max-width: 470px;
+	width: 43.278084714548803%;
+}
+.radio-typeface input{
+	width: 35px;
+}
+
+.sans-serif, .brush-script{
+	display: inline-block;
+	padding: 10px 0 50px 0;
+}
+.brush-script{
+    margin-left: 40%;
+}
+.planner-container main input[type="radio"], .planner-container main input[type="checkbox"]{
+	height: auto;
+}
+.planner-container main input[type="submit"]{
+	margin: 150px  40.995607613469986% 50px 40.995607613469986%;
+}

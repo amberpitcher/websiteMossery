@@ -1,0 +1,286 @@
+/*------------------------ NAVIGATION STYLES ------------------------*/
+@media screen and (max-width: 760px){
+	 .logo .toggle+a, .navbar{
+		display: none;
+	}
+	 .logo .toggle{
+		display: block;
+		text-decoration: none;
+		border:none;
+		float: right;
+		margin: 10px 25px 0 0;
+		font-size: 50px;
+		color: #9C8679;
+	}
+	[id^="drop"]:checked+ul{
+		display: block;
+		background-color: #FFFCFA;
+		position: absolute;
+		top: 70px;
+		right: -20px;
+		z-index: 2;
+		width: 400px;
+	}
+	nav .admin{
+		display: none;
+	}
+	.topbar{
+		font-size: 14px;
+	}
+	.logo{
+		text-align: left;
+		padding-left: 25px;
+	}
+	.logo img{
+		width: 125px;
+	}
+}
+
+@media screen and (max-width: 480px){
+	.logo .toggle{
+		margin: 15px 25px 0 0;
+		font-size: 40px;
+	}
+}
+
+
+/*------------------------ INDEX.HTML HEADER STYLES ------------------------*/
+@media screen and (max-width: 480px){
+	header img{
+		height: 550px;
+		width: auto;
+	}
+}
+
+
+/*------------------------ INDEX.HTML MAIN IMG STYLES ------------------------*/
+@media screen and (max-width: 760px){
+	 h1{
+		font-size: 50px;
+	}
+	h2{
+		font-size: 35px;
+	}
+	h3{
+		font-size: 30px;
+	}
+	main h4{
+		font-size: 16px;
+	}
+	main{
+		width: 100%;
+		padding: 0px 0;
+	}
+	main .main-pair{
+		padding-top: 0px;
+	}
+	.pair-one, .pair-two{
+		width: 50%;  
+	}
+}
+
+@media screen and (max-width: 480px){
+	main{
+		padding: 0 10px;
+	}
+	h2{
+		font-size: 50px;
+	}
+	.container .main-img .title{
+		justify-content: center;
+	}
+	.main-pair .text-align{
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+	.pair-one, .pair-two{
+		width: 100%;	
+	}
+	.pair-one img, .pair-two img{
+		height: 360px;
+		width: 100%;
+	}	
+}
+
+
+/*---INDEX.HTML NEWSLETTER STYLES ---*/
+
+@media screen and (max-width: 965px){
+
+	main input[type="submit"]{
+		width: 71.96029776674938%;
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 740px){
+	main .newsletter h1{
+		font-size: 70px;
+	}
+}
+
+@media screen and (max-width: 500px){
+	main .newsletter{			
+		text-align: center;
+		padding: 150px 0;
+	}
+	main .newsletter h1{
+		font-size: 50px;
+	}
+}
+
+
+/*------------------------ INDEX.HTML REVIEW STYLES ------------------------*/
+@media screen and (max-width: 760px){
+	.reviews{								
+		padding: 50px 35px;
+	}
+}
+
+@media screen and (max-width: 615px){
+	.reviews h2{
+		font-size: 50px;
+	}
+	.reviews article{
+		width: 50%;
+		display: block;
+		padding: 10px 10px;
+	}
+	.reviews article:last-of-type{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 480px){
+	.text-align{
+		text-align: center;
+	}
+	.reviews article{
+		display: none;
+		text-align: center;
+	}
+	.reviews article:first-of-type{
+		width: 100%;
+		display: block;
+	}
+}
+
+
+/*------------------------ REGISTER.HTML MAIN STYLES ------------------------*/
+@media screen and (max-width: 965px){
+	.register-container main input[type="submit"], .planner-container main input[type="submit"]{
+	    margin: 75px 15% 50px 15%;
+	}
+}
+
+@media screen and (max-width: 760px){
+	.register-container main{
+		padding: 25px;
+	}
+	
+}
+
+@media screen and (max-width: 480px){
+	.register-container main{
+		padding: 0 20px;
+	}
+	.register-container main form input[type="text"], .register-container main form .inline .short, .register-container main form select{
+		width: 100%;
+		margin: 0;
+	}
+	.register-container main h4 {
+   		width: 100%;
+   		margin: 0px;
+   		}
+	.register-container main form .inline{
+		flex-direction: column;
+		justify-content: center;
+		padding-top: 20px;
+	}
+	.register-container main input[type="submit"], .planner-container main input[type="submit"]{
+	    margin: 75px 15% 50px 15%;
+	}
+}
+
+
+/*------------------------ customPLANNER.HTML MAIN STYLES ------------------------*/
+
+@media screen and (max-width: 760px){
+	.planner-container header{
+		padding: 75px 25px;
+	}
+	.planner-container header h2{
+		font-size: 50px;
+	}
+	.planner-container main{
+		padding:25px;
+	}
+	.planner-container main h3 {
+	    padding-top: 50px;
+	}
+	label > input + img, #planner > input + img , #note > input + img{ /* Style images */
+	  width: 48%;
+	}
+	.planner-container main form input[type="text"]{
+		width: 100%;
+		margin: 0;
+	}
+	label > input + img {
+		margin: 0px;
+	}
+	.step-one{
+		margin: 0;
+	}
+	.name-personalisation{
+		flex-direction: column;
+		justify-content: center;
+		padding: 20px 0 50px 0;
+	}
+	.planner-container main h4 {
+	    padding: 10px 0;
+	}
+}
+
+@media screen and (max-width: 460px){
+	.planner-container main {
+	    text-align: center;
+	}
+	label > input + img, #planner > input + img , #note > input + img{ /* Style images */
+	  width: 100%;
+	}
+	.typeface{
+		display: flex;
+		flex-direction: column;
+	}
+	.typeface img{
+		width: 100%;
+	}
+}
+
+
+/*------------------------ FOOTER STYLES ------------------------*/
+@media screen and (max-width: 965px){
+	footer .footer input{
+		width: 100%;
+	}
+	footer .footer input[type="submit"]{
+		width: 100%;
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 615px){
+	footer .footlinks{
+		display: flex;
+		flex-wrap: wrap;
+
+	}
+	footer .about, .contact{
+	text-align: center;
+	padding-bottom: 20px;
+	}
+	footer .copywrite{
+		font-size: 14px;
+	}
+}
