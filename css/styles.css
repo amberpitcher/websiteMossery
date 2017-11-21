@@ -112,22 +112,36 @@ button:hover{
 	background-color: #FFD0BB;
 }
 
-body .container{
-	width: 100%;
-}
 /*------------------------ NAVIGATION STYLES ------------------------*/
-.logo .toggle, [id^="drop"]{
+#alt-navbar{
+	display: none;
+	background-color: #FFFCFA;
+	width: 100%;
+	position: absolute;
+	top: -100px;
+	left: 0;
+}
+
+.toggle{
 	display: none;
 }
 
-body nav{
+#drop{
+	display: none;
+}
+
+[id^="drop"]:checked+#alt-navbar ul{
+	opacity: 1;
+}
+
+body .navigation{
 	font-family: 'Fira Sans', sans-serif;
 	color: #FFFCFA;
 }
-body nav p{
+body .navigation p{
 	color: #FFFCFA;
 }
-nav a:hover{
+#main-navbar a:hover{
 	color: #FFDFCF;
 	transition: 0.3s;
 }
@@ -181,7 +195,7 @@ nav a:hover{
 	width: 165px;
 }
 
-.navbar{
+#main-navbar ul{
 	width: 100%;
 	height: 60px;
 	display: flex;
@@ -196,23 +210,14 @@ ul li a{
 
 /*------------------------ INDEX.HTML HEADER STYLES ------------------------*/
 
-header{
-	position: relative;
-	
-}
-header img{
+#img-header{
 	width: 100%;
-}
-
-.container header div{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
+	height: 500px;
+	background-image: url(../img/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	line-height: 500px;
 }
 
 /*------------------------ INDEX.HTML MAIN STYLES ------------------------*/
@@ -229,11 +234,11 @@ main{
 	width: 100%;
 }
 
-.container main .main-img{
+main .main-img{
 	position: relative;
 }
 
-.container .main-img .title{
+.main-img .title{
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -288,7 +293,7 @@ main .newsletter p{
 form{
 	margin: 0;
 }
-.container main form input[type="text"]{
+main form input[type="text"]{
 	width: 71.96029776674938%;
 }
 
@@ -426,20 +431,20 @@ footer a:hover{
 
 /*--------------------------REGISTER.HTML STYLES--------------------------*/
 
-.register-container header h2, .register-container main h4{
+.txt-header h2, .register-container h4{
 	color: #9C8679;
 	margin-top: 75px;
 }
 
-.register-container main h4{
+.register-container h4{
 	width:10%;
 }
 
-.register-container header{
+.txt-header{
 	text-align: center;
 }
 /*--------------------------REGISTER.HTML MAIN STYLES--------------------------*/
-.register-container main form{
+.register-container form{
 	padding: 50px 0;
 	text-align: left;
 }
@@ -449,7 +454,7 @@ footer a:hover{
 	justify-content: center;
 	flex-direction: column;
 }
-.register-container main form input:focus{
+.register-container form input:focus{
 	outline:2px solid #FFDFCF;
 }
 .register-container .input, .labels{
@@ -458,14 +463,14 @@ footer a:hover{
 	flex-direction: column;
 	padding: 10px 0;
 }
-.register-container main form input{
+.register-container form input{
 	margin: 25px 0;
 }
-.register-container main form .short{
+.register-container form .short{
 	width: 80%;
 	display: inline-block;
 }
-.register-container main h4{
+.register-container h4{
 	margin:34px;
 }
 .register-container form select{
@@ -479,60 +484,57 @@ footer a:hover{
 	margin: 25px 0px;
 	font-size: 16px;
 }
-.register-container main form .inline{
+.register-container form .inline{
 	width:100%;
 	display: flex;
 	justify-content: flex-end;
 }
-.register-container main .flex{
+.register-container .flex{
 	display: flex;
 	justify-content: flex-start;
 }
-.register-container main .flex h4{
+.register-container .flex h4{
 	margin: 120px 20px 20px 20px;
 }
-.register-container main .flex h3{
+.register-container .flex h3{
 	margin-top: 100px;
 }
-.register-container main input[type="submit"]{
+.register-container input[type="submit"]{
 	margin: 75px  40.995607613469986% 50px 40.995607613469986%;
 }
 
 
 /*--------------------------customPlanner.HTML STYLES--------------------------*/
 
-.planner-container{
-	width: 100%;
-}
-.planner-container main{
+.planner-container {
 	padding: 40px 50px;
 }
 
 /*--------------------------customPlanner.HTML HEADER STYLES--------------------------*/
 
-.planner-container header{
+.txt-header{
 	text-align: center;
 	padding: 75px 9.663250366032211%;;
 }
-.planner-container header h2,p{
+.txt-header h2,p{
 	color: #9C8679;
 }
 
-.planner-container header h3{
+.txt-header h3{
 	color: #FFDFCF;
 	padding: 10px 0;
 }
 
 /*--------------------------customPlanner.HTML MAIN STYLES--------------------------*/
 
-.planner-container main{
+.planner-container{
 	text-align: left;
 }
 
-.planner-container main h3{
+.planner-container h3{
 	padding-top: 100px;
 }
-.planner-container main h4{
+.planner-container h4{
 	color: #9C8679;
 	padding: 5px 0 50px 0;
 }
@@ -603,9 +605,9 @@ label > input:checked + img{
 .brush-script{
     margin-left: 40%;
 }
-.planner-container main input[type="radio"], .planner-container main input[type="checkbox"]{
+.planner-container  input[type="radio"], .planner-container  input[type="checkbox"]{
 	height: auto;
 }
-.planner-container main input[type="submit"]{
+.planner-container  input[type="submit"]{
 	margin: 150px  40.995607613469986% 50px 40.995607613469986%;
 }

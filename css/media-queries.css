@@ -1,44 +1,47 @@
 /*------------------------ NAVIGATION STYLES ------------------------*/
 @media screen and (max-width: 760px){
-	 .logo .toggle+a, .navbar{
+	#alt-navbar{
+		display: block;
+		opacity: 0;
+		}
+
+	.navigation{
+		position: relative;
+	}
+
+	 #main-navbar{
 		display: none;
 	}
-	 .logo .toggle{
+
+	 .toggle{
 		display: block;
-		text-decoration: none;
-		border:none;
-		float: right;
-		margin: 10px 25px 0 0;
 		font-size: 50px;
 		color: #9C8679;
-	}
-	[id^="drop"]:checked+ul{
-		display: block;
-		background-color: #FFFCFA;
 		position: absolute;
-		top: 70px;
-		right: -20px;
-		z-index: 2;
-		width: 400px;
+		top: 45px;
+		right: 50px;
 	}
-	nav .admin{
+
+	.navigation .admin{
 		display: none;
 	}
+
 	.topbar{
 		font-size: 14px;
 	}
+
 	.logo{
 		text-align: left;
 		padding-left: 25px;
 	}
+
 	.logo img{
 		width: 125px;
 	}
 }
 
 @media screen and (max-width: 480px){
-	.logo .toggle{
-		margin: 15px 25px 0 0;
+	.toggle{
 		font-size: 40px;
 	}
 }
@@ -46,18 +49,19 @@
 
 /*------------------------ INDEX.HTML HEADER STYLES ------------------------*/
 @media screen and (max-width: 480px){
-	header img{
-		height: 550px;
-		width: auto;
-	}
 }
 
 
 /*------------------------ INDEX.HTML MAIN IMG STYLES ------------------------*/
 @media screen and (max-width: 760px){
-	 h1{
-		font-size: 50px;
+	header{
+		line-height: 1;
 	}
+
+	header h1{
+		padding-top: 25%;
+	}
+
 	h2{
 		font-size: 35px;
 	}

@@ -21,10 +21,10 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 </head>
 <body>
-<div class="container">
 
 	<!--_________________________________NAVIGATION__________________________________-->
-	<nav>
+
+		<div class="navigation">
 		<section class="topbar">
 
 			<div class="promo">
@@ -51,26 +51,45 @@
 		</section>
 
 		<section class="logo">
-			<img src="img/logo.png">
-			<input type="checkbox" id="drop">
-			<label for="drop" class="toggle"><i class="fa fa-bars"></i></label>	
+			<a href="index.html"><img src="img/logo.png"></a>
 		</section>
-		
-		<ul class="navbar">
+
+	<nav id="main-navbar">
+		<ul id="main-ul">
 			<li><a href="">NEW</a></li>
-			<li><a href="">SHOP</a></li>
+			<li><a href="customPlanner.html">SHOP</a></li>
 			<li><a href="">SALE</a></li>
 		</ul>
-		
 	</nav>
 
+	<label for="drop" class="toggle"><i class="fa fa-bars"></i></label>	
+	<input type="checkbox" id="drop">
+
+	<nav id="alt-navbar">
+		<ul id="alt-ul">
+			<li><a href="#">Sign In</a></li>
+			<li><a href="register.html">Register</a></li>
+	
+			<li><a href="#" class="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Cart</a></li>
+
+			<li><a href="">NEW</a></li>
+			<ol>
+				<li><a href="">SHOP</a></li>
+				<li><a href="customPlanner.html">Planners</a></li>
+				<li><a href="">Notebooks</a></li>
+				<li><a href="">Sketchbooks</a></li>
+				<li><a href="">Accessories</a></li>
+				<li><a href="">Gift Cards</a></li>
+			</ol>
+			<li><a href="">SALE</a></li>
+		</ul>		
+	</nav>
+
+	</div>
+
 	<!--_________________________________HEADER__________________________________-->
-	<header>
-		<img src="img/banner.jpg">
-		<a href="#"><div>
+	<header id="img-header">
 			<h1>NEW COLLECTION</h1>
-		</div>
-		</a>
 	</header>
 
 	<!--_________________________________MAIN__________________________________-->
@@ -83,12 +102,14 @@
 		</section>
 
 		<section class="main-pair">
-			<div class="pair-one left">
-				<img src="img/main-img-2">
-				<div class="text-align">
-					<h2>PERSONALISED <br> PLANNERS</h2>
+			<a href="customPlanner.html">
+				<div class="pair-one left">
+					<img src="img/main-img-2">
+					<div class="text-align">
+						<h2>PERSONALISED <br> PLANNERS</h2>
+					</div>
 				</div>
-			</div>
+			</a>
 			<div class="pair-two right">
 				<img src="img/main-img-3.jpg">
 				<div class="text-align">
@@ -175,6 +196,6 @@
 			©2017 Mossery Sdn Bhd. Made with Love in Malaysia.
 		</section>
 	</footer>
-</div>
+
 </body>
 </html>
